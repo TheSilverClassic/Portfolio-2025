@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+/* src/App.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary-color: #0a66c2;
+  --primary-dark: #0a509a;
+  --secondary-color: #f3f2ef;
+  --dark-bg: #111827;
+  --dark-card: #1f2937;
+  --dark-text: #f3f4f6;
+  --dark-accent: #60a5fa;
+  --light-bg: #f3f4f6;
+  --light-card: #ffffff;
+  --light-text: #1f2937;
+  --light-accent: #2563eb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark mode base styles */
+.dark-mode {
+  background-color: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Force dark mode styles */
+.bg-gray-900 {
+  background-color: var(--dark-bg) !important;
+}
+
+.bg-gray-800 {
+  background-color: var(--dark-card) !important;
+}
+
+.text-gray-100 {
+  color: var(--dark-text) !important;
+}
+
+.text-blue-400 {
+  color: var(--dark-accent) !important;
+}
+
+/* Header styles */
+header {
+  background-color: var(--dark-card) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+header .text-blue-400 {
+  color: var(--dark-accent) !important;
+}
+
+/* Button styles */
+button.bg-gray-700 {
+  background-color: #374151 !important;
+}
+
+button:hover.bg-gray-700 {
+  background-color: #4b5563 !important;
+}
+
+/* Section styles */
+section {
+  border-color: #374151 !important;
+}
+
+section h2::after {
+  background-color: var(--dark-accent) !important;
+}
+
+/* Card styles */
+.bg-gray-800 {
+  background-color: var(--dark-card) !important;
+}
+
+/* Links */
+a.text-gray-300:hover, a.hover\:text-blue-400:hover {
+  color: var(--dark-accent) !important;
+}
+
+/* Skills tags */
+.bg-gray-700.text-blue-300 {
+  background-color: #374151 !important;
+  color: #93c5fd !important;
+}
+
+/* Project cards */
+.bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+.bg-blue-600:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-card) !important;
+}
+
+footer a:hover {
+  color: var(--dark-accent) !important;
+}
+
+/* Transitions */
+.transition-all, .transition-colors, .transition-transform {
+  transition-duration: 300ms !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .max-w-xs {
+    max-width: 12rem !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
 }

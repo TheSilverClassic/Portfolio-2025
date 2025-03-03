@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import { ThemeProvider } from './context/ThemeContext';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import WorkHistory from './components/WorkHistory';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1 max-w-6xl mx-auto w-full px-6 py-8">
+          <Profile />
+          <WorkHistory />
+          <Education />
+          <Skills />
+          <Projects />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
