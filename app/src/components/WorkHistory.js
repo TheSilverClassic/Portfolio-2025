@@ -34,9 +34,12 @@ const WorkHistory = () => {
       period: 'Apri1 2024 - December 2024',
       location: 'Houston, TX',
       responsibilities: [
-        'Led the frontend development of a major product redesign',
-        'Implemented responsive design principles across all company products',
-        'Mentored junior developers and conducted code reviews'
+        'Optimized SQL and PL/SQL workflows, improving query performance by 30% and enabling faster data-driven decisions across operational teams.',
+        'Developed and automated ETL pipelines using Python, increasing processing speed by 4x through multithreading and deployment on upgraded hardware.',
+        'Transformed and loaded vendor data into conversational databases, supporting compliance tracking and streamlined reporting for 100+ end users.',
+        'Collaborated with engineers to enhance internal AI platforms, integrating legacy applications and achieving a 25% improvement in data accessibility.',
+        'Processed and analyzed budgeting data from thousands of company vendors, delivering insights that supported accurate forecasts and financial planning.',
+        'Utilized internal tools for ticket management and testing, ensuring alignment with user expectations and successful software deployment.'
       ]
     },
     {
@@ -45,9 +48,8 @@ const WorkHistory = () => {
       period: 'January 2021 - December 2023',
       location: 'Houston, TX',
       responsibilities: [
-        'Developed and maintained websites for various clients',
-        'Collaborated with design and marketing teams',
-        'Optimized website performance and improved SEO rankings'
+        'Tutored and provided academic support in CIS, CS, PHYS, and MATH courses, enhancing students understanding and performance.',
+        'Mentored students, offering guidance and insights to facilitate their academic and personal development.',
       ]
     }
   ];

@@ -25,16 +25,28 @@ const SkillCategory = ({ title, skills }) => {
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind CSS']
+      title: 'Programming & Development',
+      skills: ['Python', 'SQL', 'PL/SQL', 'C++', 'Data Schema Design', 'Workflow Automation', 'Git', 'SVN', 'SQL Optimization', 'Backend Integration']
     },
     {
-      title: 'Backend',
-      skills: ['Node.js', 'Express', 'Python', 'RESTful APIs']
+      title: 'Data Engineering',
+      skills: ['ETL', 'Data Pipelines', 'Relational Databases', 'NoSQL Databases']
     },
     {
-      title: 'Tools & Other',
-      skills: ['Git', 'Docker', 'AWS', 'Jest', 'CI/CD']
+      title: 'Cloud & DevOps',
+      skills: ['AWS', 'GCP', 'Docker', 'Kubernetes']
+    },
+    {
+      title: 'Data Visualization',
+      skills: ['Tableau', 'Power BI', 'Spotfire', 'Dashboard Creation', 'Forecasting']
+    },
+    {
+      title: 'Professional Skills',
+      skills: ['Process Improvement', 'IT Asset Management', 'Cross-functional Collaboration', 'Stakeholder Engagement', 'Lifecycle Management']
+    },
+    {
+      title: 'Languages',
+      skills: ['English (Fluent)', 'Spanish (Fluent)']
     }
   ];
   
