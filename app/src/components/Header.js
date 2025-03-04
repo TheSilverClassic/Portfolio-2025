@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className={`sticky top-0 ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-md z-10 px-6 py-4`}>
       <div className="flex justify-between items-center max-w-6xl mx-auto">
-        <div className={`text-xl font-bold ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Your Name</div>
+        <div className={`text-xl font-bold ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Narciso Montes</div>
         <div className="flex items-center gap-4">
           <button 
             onClick={toggleTheme} 

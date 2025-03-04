@@ -25,18 +25,18 @@ const EducationItem = ({ degree, institution, period, details, gpa }) => {
 const Education = () => {
   const educationItems = [
     {
-      degree: 'Master of Science in Computer Science',
-      institution: 'University of Technology',
-      period: '2017 - 2019',
-      details: 'Specialized in Web Technologies and User Experience Design',
-      gpa: '3.8/4.0'
+      degree: 'Bachelor of Science in Computer Science',
+      institution: 'University of Houston',
+      period: '2021 - 2023',
+      details: 'Programming, and Hardware and Software Systems',
+      gpa: '3.6/4.0'
     },
     {
-      degree: 'Bachelor of Science in Information Technology',
-      institution: 'State University',
-      period: '2013 - 2017',
-      details: 'Minor in Business Administration',
-      gpa: '3.7/4.0'
+      degree: 'Associates of Science in Mathematics',
+      institution: 'SanJacinto College',
+      period: '2018 - 2020',
+      details: 'Honors Program Student',
+      gpa: '3.6/4.0'
     }
   ];
   

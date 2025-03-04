@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className={`${darkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-800 text-white'} py-8`}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {currentYear} Your Name. All Rights Reserved.</p>
+          <p>&copy; {currentYear} Narciso Montes. All Rights Reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {navLinks.map(link => (
               <a 

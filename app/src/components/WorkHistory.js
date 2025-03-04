@@ -29,10 +29,10 @@ const Job = ({ title, company, period, location, responsibilities }) => {
 const WorkHistory = () => {
   const jobs = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'Tech Company Inc.',
-      period: 'January 2022 - Present',
-      location: 'San Francisco, CA',
+      title: 'Data Engineer',
+      company: 'EOG Resources',
+      period: 'Apri1 2024 - December 2024',
+      location: 'Houston, TX',
       responsibilities: [
         'Led the frontend development of a major product redesign',
         'Implemented responsive design principles across all company products',
@@ -40,10 +40,10 @@ const WorkHistory = () => {
       ]
     },
     {
-      title: 'Web Developer',
-      company: 'Digital Agency LLC',
-      period: 'June 2019 - December 2021',
-      location: 'New York, NY',
+      title: 'Tutor',
+      company: 'Scholarly Enrichment Program',
+      period: 'January 2021 - December 2023',
+      location: 'Houston, TX',
       responsibilities: [
         'Developed and maintained websites for various clients',
         'Collaborated with design and marketing teams',

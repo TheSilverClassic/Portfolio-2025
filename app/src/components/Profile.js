@@ -11,19 +11,19 @@ const Profile = () => {
           <img src="/logo192.png" alt="Profile" className="rounded-full w-full shadow-md" />
         </div>
         <div>
-          <h1 className={`text-4xl font-bold mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Your Name</h1>
-          <h2 className="text-2xl mb-4">Full Stack Developer</h2>
+          <h1 className={`text-4xl font-bold mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Narciso Montes</h1>
+          <h2 className="text-2xl mb-4">Technologist and Developer</h2>
           <p className="mb-4">
             Passionate developer with expertise in web development
             and a strong background in building responsive and user-friendly applications.
           </p>
           
           <div className="flex flex-wrap gap-4 my-6">
-            <a href="mailto:your.email@example.com" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              <span>📧</span> your.email@example.com
+            <a href="mailto:narcisomontes85@gmail.com" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+              <span>📧</span> narcisomontes85@gmail.com
             </a>
-            <a href="tel:+1234567890" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              <span>📱</span> (123) 456-7890
+            <a href="tel:+18327045898" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+              <span>📱</span> (832) 704-5898
             </a>
           </div>
           
