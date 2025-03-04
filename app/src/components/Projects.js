@@ -40,19 +40,39 @@ const ProjectCard = ({ title, description, technologies }) => {
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe']
+      title: 'Mastermind Game',
+      description: 'Color guessing game created using Test-Driven Development (TDD) principles, emphasizing code quality and design principles.',
+      technologies: ['Python', 'TDD', 'JUnit', 'OOP'],
+      github: 'https://github.com/TheSilverClassic/Mastermind'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates',
-      technologies: ['Vue.js', 'Firebase', 'Vuetify']
+      title: 'Spelling Service',
+      description: 'Program that identifies and corrects spelling errors in text files using an external spelling check service.',
+      technologies: ['Python', 'Test-First Development', 'API Integration', 'File I/O'],
+      github: 'https://github.com/TheSilverClassic/Spelling_Service'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Interactive weather forecast application with location-based services',
-      technologies: ['React', 'OpenWeather API', 'Chart.js']
+      title: 'Airport Sorter Terminal',
+      description: 'Console program for sorting airport data based on user-defined criteria, following Single Responsibility and Open-Closed principles.',
+      technologies: ['Python', 'Design Patterns', 'OOP', 'Console Application'],
+      github: 'https://github.com/TheSilverClassic/Airports'
+    },
+    {
+      title: 'Application Processor',
+      description: 'Console application to evaluate job applicants using dynamically selected criteria and applied strategy pattern.',
+      technologies: ['Python', 'Design Patterns', 'Strategy Pattern', 'Command Pattern'],
+      github: 'https://github.com/TheSilverClassic/Application_Processor'
+    },
+    {
+      title: 'Perfect Number',
+      description: 'Program that identifies and prints perfect numbers based on user input ranges.',
+      technologies: ['Python', 'Test-First Development', 'Mathematics', 'Console Application'],
+      github: 'https://github.com/TheSilverClassic/Perfect_Number'
+    },
+    {
+      title: 'Raspberry Pi Temperature Monitor',
+      description: 'System using Raspberry Pi 3A+ with temperature sensor to monitor and record temperature variations over time.',
+      technologies: ['Python', 'Raspberry Pi', 'IoT', 'Sensors', 'Data Visualization']
     }
   ];
   
