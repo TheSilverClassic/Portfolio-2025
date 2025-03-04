@@ -2,7 +2,7 @@ import React from 'react';
 import Section from './Section';
 import { useTheme } from '../context/ThemeContext';
 
-const ProjectCard = ({ title, description, technologies }) => {
+const ProjectCard = ({ title, description, technologies, github }) => {
   const { darkMode } = useTheme();
   
   return (
@@ -20,18 +20,32 @@ const ProjectCard = ({ title, description, technologies }) => {
         ))}
       </div>
       <div className="flex gap-4">
-        <a 
-          href="#" 
-          className={`px-3 py-1.5 rounded text-sm font-medium ${darkMode ? 'bg-gray-700 text-blue-300 hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'} transition-colors`}
-        >
-          View Code
-        </a>
-        <a 
-          href="#" 
+        {github ? (
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`px-3 py-1.5 rounded text-sm font-medium ${darkMode ? 'bg-gray-700 text-blue-300 hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'} transition-colors`}
+          >
+            View Code
+          </a>
+        ) : (
+          <a 
+            href="#"
+            className={`px-3 py-1.5 rounded text-sm font-medium ${darkMode ? 'bg-gray-700 text-blue-300 hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'} transition-colors opacity-50 cursor-not-allowed`}
+          >
+            Code Coming Soon
+          </a>
+        )}
+        {/* Only show Live Demo button if we implement this feature in the future */}
+        {/*
+        <a
+          href="#"
           className={`px-3 py-1.5 rounded text-sm font-medium ${darkMode ? 'bg-blue-600 text-white hover:bg-blue-500' : 'bg-blue-600 text-white hover:bg-blue-700'} transition-colors`}
         >
           Live Demo
         </a>
+        */}
       </div>
     </div>
   );
