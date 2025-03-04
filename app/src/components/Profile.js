@@ -28,11 +28,11 @@ const Profile = () => {
           </div>
           
           <div className="flex gap-4">
-            <a href="https://github.com/TheSilverClassic?tab=repositories" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300 hover:text-blue-400' : 'text-gray-700 hover:text-blue-600'}`}>
-              <span>GitHub</span>
+            <a href="https://github.com/yourusername" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300 hover:text-blue-400' : 'text-gray-700 hover:text-blue-600'}`}>
+              <span className="text-xl">💻</span> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/narciso-montes/" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300 hover:text-blue-400' : 'text-gray-700 hover:text-blue-600'}`}>
-              <span>LinkedIn</span>
+            <a href="https://linkedin.com/in/yourprofile" className={`flex items-center gap-2 ${darkMode ? 'text-gray-300 hover:text-blue-400' : 'text-gray-700 hover:text-blue-600'}`}>
+              <span className="text-xl">🔗</span> LinkedIn
             </a>
           </div>
         </div>
