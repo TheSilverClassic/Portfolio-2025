@@ -30,12 +30,12 @@ const ProjectCard = ({ title, description, technologies, github }) => {
             View Code
           </a>
         ) : (
-          <a 
-            href="#"
+          <button
+            disabled
             className={`px-3 py-1.5 rounded text-sm font-medium ${darkMode ? 'bg-blue-600 text-white hover:bg-blue-500' : 'bg-blue-600 text-white hover:bg-blue-700'} transition-colors opacity-50 cursor-not-allowed`}
           >
             Code Coming Soon
-          </a>
+          </button>
         )}
         {/* Only show Live Demo button if we implement this feature in the future */}
         {/*
